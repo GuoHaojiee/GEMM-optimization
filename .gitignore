@@ -1,0 +1,38 @@
+# 编译产物
+build/
+*.o
+*.d
+*.a
+*.so
+*.dylib
+
+# CMake 生成文件
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+compile_commands.json
+
+# 测试结果（CSV 数据文件，不提交，每人机器不同）
+results/*.csv
+results/*.png
+results/*.ncu-rep
+
+# Python 缓存
+__pycache__/
+*.pyc
+*.pyo
+analysis/__pycache__/
+
+# 编辑器临时文件
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# CUDA 相关
+*.cubin
+*.ptx
+*.fatbin

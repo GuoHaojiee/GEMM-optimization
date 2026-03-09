@@ -11,7 +11,7 @@ NVCCFLAGS = -O3 -arch=sm_86 -std=c++17 -I include
 # ---- CPU 目标 ----
 cpu: benchmark
 
-benchmark: src/benchmark.cpp src/gemm_naive.cpp src/gemm_simd.cpp
+benchmark: benchmark.cpp gemm_naive.cpp gemm_simd.cpp
 	$(CXX) $(CXXFLAGS) $^ -o $@
 	@echo "✓ CPU benchmark built. Run: ./benchmark"
 
